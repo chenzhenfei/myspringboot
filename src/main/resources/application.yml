@@ -32,7 +32,6 @@ spring:
           max-active: 30
           min-idle: 0
           max-wait: -1ms
-
 mybatis:
     mapper-locations: classpath:mybatis/*.xml
     type-aliases-package: com.example.studyspringboot.dto

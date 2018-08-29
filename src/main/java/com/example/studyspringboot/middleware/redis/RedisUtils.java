@@ -1,4 +1,4 @@
-package com.example.studyspringboot.config.redisconfig;
+package com.example.studyspringboot.middleware.redis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.*;

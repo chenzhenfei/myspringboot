@@ -1,4 +1,4 @@
-package com.example.studyspringboot.config.redisconfig;
+package com.example.studyspringboot.middleware.redis;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
@@ -19,7 +19,6 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 
 import java.lang.reflect.Method;
 import java.time.Duration;
-import java.util.Optional;
 
 /**
  *redis 配置类

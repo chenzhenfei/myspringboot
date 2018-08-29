@@ -7,7 +7,7 @@ import javax.jws.WebService;
 import java.util.List;
 
 
-@Service
+
 public interface UserService {
 
     void  save(User user);

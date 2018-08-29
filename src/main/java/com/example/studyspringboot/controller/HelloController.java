@@ -1,6 +1,6 @@
 package com.example.studyspringboot.controller;
 
-import com.example.studyspringboot.config.redisconfig.RedisUtils;
+import com.example.studyspringboot.middleware.redis.RedisUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
