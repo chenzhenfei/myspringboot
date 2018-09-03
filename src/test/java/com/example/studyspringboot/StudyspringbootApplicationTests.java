@@ -1,6 +1,6 @@
 package com.example.studyspringboot;
 
-import com.example.studyspringboot.dto.User;
+import com.example.studyspringboot.dto.user.User;
 import com.example.studyspringboot.services.user.UserService;
 import org.junit.After;
 import org.junit.Before;

@@ -1,6 +1,6 @@
 package com.example.studyspringboot.proxy.stati;
 
-import com.example.studyspringboot.dto.User;
+import com.example.studyspringboot.dto.user.User;
 import com.example.studyspringboot.services.user.UserService;
 import com.example.studyspringboot.services.user.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,4 +56,8 @@ public class UserServiceProxy implements UserService{
         us.findAll();
     }
 
+    @Override
+    public String testProfile() {
+        return "test";
+    }
 }

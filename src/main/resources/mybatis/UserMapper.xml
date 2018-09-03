@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.example.studyspringboot.dao.user.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.example.studyspringboot.dto.User" >
+<mapper namespace="com.example.studyspringboot.dao.repository.user.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.example.studyspringboot.dto.user.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="age" property="age" jdbcType="INTEGER" />
@@ -22,7 +22,7 @@
     delete from user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.example.studyspringboot.dto.User" >
+  <insert id="insert" parameterType="com.example.studyspringboot.dto.user.User" >
     insert into user (id, name, age, 
       sex, password, status
       )
@@ -30,7 +30,7 @@
       #{sex,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{status,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.example.studyspringboot.dto.User" >
+  <insert id="insertSelective" parameterType="com.example.studyspringboot.dto.user.User" >
     insert into user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -73,7 +73,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.example.studyspringboot.dto.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.studyspringboot.dto.user.User" >
     update user
     <set >
       <if test="name != null" >
@@ -94,7 +94,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.example.studyspringboot.dto.User" >
+  <update id="updateByPrimaryKey" parameterType="com.example.studyspringboot.dto.user.User" >
     update user
     set name = #{name,jdbcType=VARCHAR},
       age = #{age,jdbcType=INTEGER},
@@ -103,7 +103,7 @@
       status = #{status,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <select id="findAll" resultType="com.example.studyspringboot.dto.User">
+  <select id="findAll" resultType="com.example.studyspringboot.dto.user.User">
     select
     <include refid="Base_Column_List" />
     from user

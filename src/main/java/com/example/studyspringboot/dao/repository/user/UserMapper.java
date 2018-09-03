@@ -1,6 +1,6 @@
-package com.example.studyspringboot.dao.user.mapper;
+package com.example.studyspringboot.dao.repository.user;
 
-import com.example.studyspringboot.dto.User;
+import com.example.studyspringboot.dto.user.User;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.studyspringboot.dto;
+package com.example.studyspringboot.dto.user;
 
 public class User {
     private Integer id;

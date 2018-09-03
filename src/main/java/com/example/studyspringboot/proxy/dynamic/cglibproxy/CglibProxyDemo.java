@@ -1,8 +1,6 @@
 package com.example.studyspringboot.proxy.dynamic.cglibproxy;
 
-import com.example.studyspringboot.dto.User;
-import com.example.studyspringboot.services.user.UserService;
-import com.example.studyspringboot.services.user.UserServiceImpl;
+import com.example.studyspringboot.dto.user.User;
 
 /**
  * cglib 测试

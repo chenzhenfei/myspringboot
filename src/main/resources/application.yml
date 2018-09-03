@@ -1,10 +1,13 @@
 server:
   port: 8080
+  servlet:
+    context-path: /study
+
 
 spring:
     datasource:
          name: test
-         url: jdbc:mysql://192.168.18.131:3306/study
+         url: jdbc:mysql://192.168.18.129:3306/study
          username: root
          password: 11100247
          type: com.alibaba.druid.pool.DruidDataSource
@@ -41,5 +44,10 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
+
+ # 运行时可以在控制台查看  启用和未启用的配置报告查看
+debug: true
+
 
 

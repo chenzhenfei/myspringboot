@@ -4,7 +4,7 @@ package com.example.studyspringboot.controller.proxy;
 import com.alibaba.fastjson.JSONArray;
 import com.example.studyspringboot.proxy.dynamic.jdkproxy.ProxyFactory;
 import com.example.studyspringboot.proxy.stati.UserServiceProxy;
-import com.example.studyspringboot.dto.User;
+import com.example.studyspringboot.dto.user.User;
 import com.example.studyspringboot.services.user.UserService;
 import com.example.studyspringboot.services.user.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;

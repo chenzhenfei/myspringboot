@@ -1,14 +1,13 @@
 package com.example.studyspringboot.services.user;
 
-import com.example.studyspringboot.dao.user.mapper.UserMapper;
-import com.example.studyspringboot.dto.User;
+import com.example.studyspringboot.dao.repository.user.UserMapper;
+import com.example.studyspringboot.dto.user.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.jws.WebService;
 import java.util.List;
 
-//@WebService(serviceName = "UserService",endpointInterface = "com.example.studyspringboot.services.user.UserService")
+//@WebService(serviceName = "UserService",endpointInterface = "UserService")
 @Service
 public class UserServiceImpl implements  UserService {
 
@@ -38,5 +37,10 @@ public class UserServiceImpl implements  UserService {
     @Override
     public List<User> findAll() {
         return userMapper.findAll();
+    }
+
+    @Override
+    public String testProfile() {
+        return "userServiceImple";
     }
 }

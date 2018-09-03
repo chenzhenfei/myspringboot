@@ -1,14 +1,13 @@
 package com.example.studyspringboot.services.user;
 
-import com.example.studyspringboot.dto.User;
-import org.springframework.stereotype.Service;
+import com.example.studyspringboot.dto.user.User;
+import com.example.studyspringboot.services.common.CommonService;
 
-import javax.jws.WebService;
 import java.util.List;
 
 
 
-public interface UserService {
+public interface UserService extends CommonService {
 
     void  save(User user);
 
