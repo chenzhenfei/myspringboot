@@ -15,7 +15,7 @@ public class HelloController {
     @GetMapping("/index")
     public String getIndex(){
 
-        return (String)redisUtils.get("a");
+        return (String)redisUtils.get("absdfs");
 
     }
 
