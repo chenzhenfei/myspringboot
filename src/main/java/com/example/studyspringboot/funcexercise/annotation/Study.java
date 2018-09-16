@@ -1,4 +1,4 @@
-package com.example.studyspringboot.funcexercise;
+package com.example.studyspringboot.funcexercise.annotation;
 
 
 import org.springframework.core.annotation.AliasFor;

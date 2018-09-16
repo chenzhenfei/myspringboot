@@ -14,7 +14,7 @@ public class StudyspringbootApplication {
 
         SpringApplication start =new SpringApplication(StudyspringbootApplication.class);
 //        start.setBannerMode(Banner.Mode.OFF);
-        start.setAdditionalProfiles("dev");
+//        start.setAdditionalProfiles("prod");
         start.run();
     }
 

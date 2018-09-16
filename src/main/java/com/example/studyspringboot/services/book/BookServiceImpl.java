@@ -43,8 +43,4 @@ public class BookServiceImpl implements  BookService {
         System.out.println("spring bean 销毁之前执行");
     }
 
-    @Override
-    public String testProfile() {
-        return "bookServiceImple";
-    }
 }

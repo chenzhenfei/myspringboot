@@ -1,13 +1,12 @@
 package com.example.studyspringboot.services.user;
 
 import com.example.studyspringboot.dto.user.User;
-import com.example.studyspringboot.services.common.CommonService;
 
 import java.util.List;
 
 
 
-public interface UserService extends CommonService {
+public interface UserService {
 
     void  save(User user);
 

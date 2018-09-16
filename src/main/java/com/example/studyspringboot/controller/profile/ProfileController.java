@@ -1,20 +1,20 @@
-package com.example.studyspringboot.controller.common;
+package com.example.studyspringboot.controller.profile;
 
 
-import com.example.studyspringboot.services.common.CommonService;
+import com.example.studyspringboot.services.common.ProfileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/profile")
-public class CommonController {
+public class ProfileController {
     @Autowired
-    private CommonService commonService;
+    private ProfileService commonService;
 
     @RequestMapping("/index")
     public String testProfile(){
-        return commonService.testProfile();
+        return commonService.getProfile();
     }
 
 }

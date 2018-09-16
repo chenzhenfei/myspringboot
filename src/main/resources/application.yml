@@ -3,8 +3,10 @@ server:
   servlet:
     context-path: /study
 
-
 spring:
+    # 配置启用的活动profile
+    profiles:
+          active: dev
     datasource:
          name: test
          url: jdbc:mysql://192.168.18.129:3306/study
@@ -25,6 +27,17 @@ spring:
          testOnReturn: false
          poolPreparedStatements: true
          maxOpenPreparedStatements: 20
+         # 设置favicon
+    mvc:
+        favicon:
+          enabled: false
+          #----------- charset-----
+    http:
+        encoding:
+          charset: UTF-8
+          enabled: true
+          force: true
+
     redis:
       host: 192.168.18.131 #redis 服务器
       password:   #redis 密码
@@ -35,6 +48,7 @@ spring:
           max-active: 30
           min-idle: 0
           max-wait: -1ms
+
 mybatis:
     mapper-locations: classpath:mybatis/*.xml
     type-aliases-package: com.example.studyspringboot.dto

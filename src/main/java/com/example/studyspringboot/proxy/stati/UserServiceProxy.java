@@ -56,8 +56,4 @@ public class UserServiceProxy implements UserService{
         us.findAll();
     }
 
-    @Override
-    public String testProfile() {
-        return "test";
-    }
 }

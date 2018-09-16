@@ -39,8 +39,4 @@ public class UserServiceImpl implements  UserService {
         return userMapper.findAll();
     }
 
-    @Override
-    public String testProfile() {
-        return "userServiceImple";
-    }
 }
